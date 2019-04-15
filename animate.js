@@ -35,7 +35,7 @@ function countdown() {
 
 function random() {
   words.innerHTML = '';
-  var random = Math.floor(Math.random() * (list.length - 0 + 1)) + 0;
+  var random = Math.floor(Math.random() * list.length);
   var wordArray = list[random].split('');
   for (var i = 0; i < wordArray.length; i++) {
     //building the words with spans around the letters
@@ -46,16 +46,17 @@ function random() {
   }
   spans = document.querySelectorAll('.span');
 }
+
 const list = [
   'ACCOUNT',
   'ACCURATE',
   'DEFINATELY',
-  'GOVERMENT​',
+  'GOVERMENT',
   'ACCOMODATE',
   'OCCURRED',
   'DABYJJEW',
   'EWAVTHE',
-  'RECIEVE​',
+  'RECIEVE',
   'PUBLICALLY',
   'WJEFUWEH',
   'WJEFIWEH',
