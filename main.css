@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f8e71c;
+  text-transform: uppercase;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  /* transform: rotate(180deg); */
+}
+
+.wrapper {
+  margin: 0 0;
+  /*    width:1024px;*/
+  position: relative;
+}
+
+.text1 {
+  /* font-family: Helvetica-Bold; */
+  font-size: 100px;
+  color: #7ed321;
+  letter-spacing: 0;
+  line-height: 80px;
+  text-align: left;
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 401px;
+  height: 480px;
+}
+.text2 {
+  /* font-family: Helvetica-Bold; */
+  font-size: 200px;
+  color: #f3f3f3;
+  letter-spacing: 0;
+  text-align: right;
+  left: 257;
+  line-height: 150px;
+  width: 767px;
+  height: 300px;
+  position: absolute;
+}
+.text3 {
+  /* font-family: Helvetica-Bold; */
+  font-size: 100px;
+  color: #7ed321;
+  letter-spacing: 0;
+  line-height: 80px;
+  text-align: left;
+  left: 1024px;
+  top: 0;
+  position: absolute;
+  width: 317px;
+  height: 480px;
+}
+
+h1 {
+  color: #ecf0f1;
+}
+
+h1 + p {
+  margin-bottom: 5%;
+  color: #3498db;
+}
+
+.scoreWrap {
+  /* font-family: Helvetica-Bold; */
+  font-size: 300px;
+  color: #d0021b;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.timeWrap {
+  float: right;
+  /* font-family: Helvetica-Bold; */
+  font-size: 300px;
+  color: #d0021b;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.outerWrap {
+  /*    position:relative;*/
+}
+.outerWrap:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.bg {
+  background-color: #04af71;
+}
+
+button {
+  border: none;
+  background-color: #d0021b;
+  box-shadow: 0px 5px 0px 0px #7ed321;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 20px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+button:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
+
+/*
+.scoreWrap p, .scoreWrap span, .timeWrap p, .timeWrap span {
+    font-size: 60px;
+    color: #FF7373;
+}
+*/
+
+.wordsWrap {
+  position: absolute;
+  margin-top: 500px;
+  /* font-family: Helvetica-Bold; */
+  font-size: 150px;
+  color: #7ed321;
+  letter-spacing: 0;
+  text-align: left;
+  line-height: 80px;
+}
+
+.words span {
+  font-size: 150px;
+  letter-spacing: 1px;
+}
