@@ -7,6 +7,7 @@ var button = document.querySelector('button');
 var words = document.querySelector('.words');
 var timerDiv = document.querySelector('.time');
 var scoreDiv = document.querySelector('.score');
+var wrapper = document.querySelector('.wrapper');
 var points = 0;
 var spans;
 var typed;
@@ -48,12 +49,22 @@ function random() {
 }
 
 const list = [
+  'APPLE',
+  'EYES',
+  'WILL',
+  'MONEY',
+  'LOVE',
+  'HAPPY',
+  'CREATIVITY',
   'ACCOUNT',
   'ACCURATE',
   'DEFINATELY',
   'GOVERMENT',
+  'GOVERNMENT',
   'ACCOMODATE',
+  'ACCOMONDATE',
   'OCCURRED',
+  'OCCURED',
   'DABYJJEW',
   'EWAVTHE',
   'RECIEVE',
@@ -95,38 +106,6 @@ const list = [
   'EXHILARATE',
   'EXCEED',
   'EXISTENCE',
-  'EXPERIENCE',
-  'FIERY',
-  'FOREIGN',
-  'GAUGE',
-  'GRATEFUL',
-  'GUARANTEE',
-  'SYNONYMS',
-  'HARASS',
-  'HEIGHT',
-  'HIERARCHY',
-  'HUMOROUS',
-  'IGNORANCE',
-  'IMMEDIATE',
-  'INDEPENDENT',
-  'INDISPENSABLE',
-  'INOCULATE',
-  'INTELLIGENCE',
-  'JEWELRY',
-  'JUDGMENT',
-  'KERNEL',
-  'LEISURE',
-  'LIAISON',
-  'LIBRARY',
-  'LICENSE',
-  'MAINTENANCE',
-  'MANEUVER',
-  'MEDIEVAL',
-  'MEMENTO',
-  'MILLENNIUM',
-  'MINIATURE',
-  'MINUSCULE',
-  'MISCHIEVOUS',
   'MISSPELL',
   'NEIGHBOR',
   'NOTICEABLE',
@@ -216,6 +195,9 @@ function typing(e) {
       words.classList.add('animated');
       words.classList.add('fadeOut');
       points++; // increment the points
+      if (Math.random() > 0.5) {
+        wrapper.classList.toggle('rotate-180');
+      }
       scoreDiv.innerHTML = points; //add points to the points div
       document.removeEventListener('keydown', typing, false);
       setTimeout(function() {
